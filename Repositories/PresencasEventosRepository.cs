@@ -92,13 +92,13 @@ namespace webapi.event_.Repositories
             }
         }
 
-        public void Inscrever(PresencasEventos inscricao)
+        public void Inscrever(PresencasEventos evento)
         {
             try
             {
-                inscricao.IdPresencaEvento = Guid.NewGuid();
+                evento.IdPresencaEvento = Guid.NewGuid();
 
-                _context.PresencasEventos.Add(inscricao);
+                _context.PresencasEventos.Add(evento);
 
                 _context.SaveChanges();
             }

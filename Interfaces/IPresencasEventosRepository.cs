@@ -9,6 +9,6 @@ namespace webapi.event_.Interfaces
         PresencasEventos BuscarPorId(Guid id);
         void Atualizar(Guid id, PresencasEventos presencaEvento);
         List<PresencasEventos> ListarMinhas(Guid id);
-        void Inscrever(PresencasEventos inscricao);
+        void Inscrever(PresencasEventos evento);
     }
 }

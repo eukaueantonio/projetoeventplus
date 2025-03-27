@@ -18,6 +18,29 @@ namespace webapi.event_.Controllers
         }
 
 
+
+
+        /// <summary>
+        /// Endpoint  para Increver-se Num Evento no Banco de Dados
+        /// </summary>
+        /// <param name="evento"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public IActionResult Post(PresencasEventos evento)
+        {
+            try
+            {
+                _presencasEventosRepository.Inscrever(evento);
+
+                return Created();
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
+
         [HttpPut]
         public IActionResult Put(Guid id, PresencasEventos presencaEvento)
         {
@@ -90,7 +113,6 @@ namespace webapi.event_.Controllers
                 return BadRequest(e.Message);
             }
         }
-
         
     }
 }
