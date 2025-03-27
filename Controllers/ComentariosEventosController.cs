@@ -5,8 +5,10 @@ using webapi.event_.Interfaces;
 
 namespace webapi.event_.Controllers
 {
+   
     [Route("api/[controller]")]
     [ApiController]
+    [Produces("application/json")]
     public class ComentariosEventosController : Controller
     {
         
@@ -23,11 +25,11 @@ namespace webapi.event_.Controllers
         /// <param name="novoFeedback"></param>
         /// <returns></returns>
         [HttpPost]
-        public IActionResult Post(ComentariosEventos comentarioEvento)
+        public IActionResult Post(ComentariosEventos novoFeedback)
         {
             try
             {
-                _comentariosEventosRepository.Cadastrar(comentarioEvento);
+                _comentariosEventosRepository.Cadastrar(novoFeedback);
                 return Created();
             }
             catch (Exception e)

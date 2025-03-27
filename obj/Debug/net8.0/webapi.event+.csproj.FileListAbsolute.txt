@@ -350,3 +350,5 @@ C:\Users\57104262881\Desktop\projetoeventplus\obj\Debug\net8.0\staticwebassets.u
 C:\Users\57104262881\Desktop\projetoeventplus\obj\Debug\net8.0\webapi.e.D40388AC.Up2Date
 C:\Users\57104262881\Desktop\projetoeventplus\obj\Debug\net8.0\webapi.event+.genruntimeconfig.cache
 C:\Users\57104262881\Desktop\projetoeventplus\obj\Debug\net8.0\ref\webapi.event+.dll
+C:\Users\57104262881\Desktop\projetoeventplus\bin\Debug\net8.0\webapi.event+.xml
+C:\Users\57104262881\Desktop\projetoeventplus\obj\Debug\net8.0\webapi.event+.xml

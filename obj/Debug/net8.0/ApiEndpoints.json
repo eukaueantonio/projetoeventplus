@@ -8,7 +8,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "comentarioEvento",
+        "Name": "novoFeedback",
         "Type": "webapi.event_.Domains.ComentariosEventos",
         "IsRequired": true
       }
@@ -112,16 +112,6 @@
   },
   {
     "ContainingType": "webapi.event_.Controllers.EventoController",
-    "Method": "Index",
-    "RelativePath": "api/Evento",
-    "HttpMethod": "",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "webapi.event_.Controllers.EventoController",
     "Method": "Put",
     "RelativePath": "api/Evento/{id}",
     "HttpMethod": "PUT",
@@ -144,7 +134,7 @@
   {
     "ContainingType": "webapi.event_.Controllers.EventoController",
     "Method": "GetById",
-    "RelativePath": "api/Evento/ListarPorId{id}",
+    "RelativePath": "api/Evento/ListarPorId/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -160,7 +150,7 @@
   {
     "ContainingType": "webapi.event_.Controllers.EventoController",
     "Method": "ListarProximosEventos",
-    "RelativePath": "api/Evento/ListarProximosEventos{id}",
+    "RelativePath": "api/Evento/ListarProximosEventos/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -168,6 +158,101 @@
       {
         "Name": "id",
         "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webapi.event_.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDTO",
+        "Type": "webapi.event_.DTO.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webapi.event_.Controllers.PresencasEventosController",
+    "Method": "Put",
+    "RelativePath": "api/PresencasEventos",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "presencaEvento",
+        "Type": "webapi.event_.Domains.PresencasEventos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webapi.event_.Controllers.PresencasEventosController",
+    "Method": "Get",
+    "RelativePath": "api/PresencasEventos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webapi.event_.Controllers.PresencasEventosController",
+    "Method": "Delete",
+    "RelativePath": "api/PresencasEventos/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webapi.event_.Controllers.PresencasEventosController",
+    "Method": "GetById",
+    "RelativePath": "api/PresencasEventos/BuscarPorId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webapi.event_.Controllers.PresencasEventosController",
+    "Method": "Get",
+    "RelativePath": "api/PresencasEventos/ListarMinhas/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -326,6 +411,22 @@
       {
         "Name": "id",
         "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webapi.event_.Controllers.UsuarioController",
+    "Method": "Post",
+    "RelativePath": "api/Usuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "webapi.event_.Domains.Usuarios",
         "IsRequired": true
       }
     ],

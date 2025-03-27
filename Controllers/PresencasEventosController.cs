@@ -17,9 +17,8 @@ namespace webapi.event_.Controllers
             _presencasEventosRepository = presencasEventosRepository;
         }
 
+
         [HttpPut]
-
-
         public IActionResult Put(Guid id, PresencasEventos presencaEvento)
         {
             try
@@ -91,5 +90,7 @@ namespace webapi.event_.Controllers
                 return BadRequest(e.Message);
             }
         }
+
+        
     }
 }

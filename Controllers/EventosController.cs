@@ -20,7 +20,6 @@ namespace webapi.event_.Controllers
         /// <summary>
         /// Endpoint  para Listar Todos os Eventos Presentes no Banco de Dados
         /// </summary>
-        /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet]
         public IActionResult Get()
@@ -39,7 +38,7 @@ namespace webapi.event_.Controllers
         /// <summary>
         /// Endpoint  para Cadastar um Evento no Banco de Dados
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="novoEvento"></param>
         /// <returns></returns>
         [HttpPost]
         public IActionResult Post(Eventos novoEvento)
@@ -101,7 +100,7 @@ namespace webapi.event_.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpGet("ListarPorId{id}")]
+        [HttpGet("ListarPorId/{id}")]
         public IActionResult GetById(Guid id)
         {
             try
@@ -119,9 +118,9 @@ namespace webapi.event_.Controllers
         /// <summary>
         /// Endpoint  próximos Eventos no Banco de Dados
         /// </summary>
-        /// <param name="id"></param>
+        
         /// <returns></returns>
-        [HttpGet("ListarProximosEventos{id}")]
+        [HttpGet("ListarProximosEventos/{id}")]
         public IActionResult ListarProximosEventos()
         {
             try
@@ -133,11 +132,6 @@ namespace webapi.event_.Controllers
             {
                 return BadRequest(e.Message);
             }
-        }
-
-        public IActionResult Index()
-        {
-            return View();
         }
     }
 }
