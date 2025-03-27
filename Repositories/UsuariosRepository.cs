@@ -1,6 +1,7 @@
 ﻿using webapi.event_.Contexts;
 using webapi.event_.Domains;
 using webapi.event_.Interfaces;
+using webapi.event_.Utils;
 
 namespace webapi.event_.Repositories
 {
@@ -48,7 +49,7 @@ namespace webapi.event_.Repositories
                 throw;
             }
         }
-        }
+        
 
         public Usuarios BuscarPorId(Guid id)
         {
