@@ -79,6 +79,13 @@
             <param name="loginDTO">Email e senha do usuário</param>
             <returns>Token de acesso</returns>
         </member>
+        <member name="M:webapi.event_.Controllers.PresencasEventosController.Post(webapi.event_.Domains.PresencasEventos)">
+            <summary>
+            Endpoint  para Increver-se Num Evento no Banco de Dados
+            </summary>
+            <param name="evento"></param>
+            <returns></returns>
+        </member>
         <member name="T:webapi.event_.Migrations.Db_projetoeventplus">
             <inheritdoc />
         </member>

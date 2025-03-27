@@ -181,6 +181,22 @@
   },
   {
     "ContainingType": "webapi.event_.Controllers.PresencasEventosController",
+    "Method": "Post",
+    "RelativePath": "api/PresencasEventos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "evento",
+        "Type": "webapi.event_.Domains.PresencasEventos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webapi.event_.Controllers.PresencasEventosController",
     "Method": "Put",
     "RelativePath": "api/PresencasEventos",
     "HttpMethod": "PUT",

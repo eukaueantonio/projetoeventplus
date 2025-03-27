@@ -321,6 +321,37 @@
       }
     },
     "/api/PresencasEventos": {
+      "post": {
+        "tags": [
+          "PresencasEventos"
+        ],
+        "summary": "Endpoint  para Increver-se Num Evento no Banco de Dados",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PresencasEventos"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PresencasEventos"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PresencasEventos"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "put": {
         "tags": [
           "PresencasEventos"
